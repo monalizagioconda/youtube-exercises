@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid Practice</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Titillium+Web:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Roboto, Arial;
+        margin: 30px;
+      }
+
+      body > div {
+        display: grid;
+        margin-top: 20px;
+      }
+      
+      .a11 {
+        grid-template-columns: 200px 75px;
+      }
+
+      .col1-8 div {
+        background-color: royalblue;
+      }
+
+    </style>
+
+  </head>
+  <body style="padding-bottom: 1000px;">
+    <div style="
+      grid-template-columns: 100px 100px">
+      <div style="background-color: lightblue;">div 1</div>
+      <div style="background-color: lightpink;">div 2<p>text</p></div>
+    </div>
+
+    <div style="
+      grid-template-columns: 100px 200px">
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">200px<p>text</p></div>
+      <div style="background-color: lightpink;">200px</div>
+    </div>
+
+    <div style="
+      grid-template-columns: 100px 1fr;">
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">1fr</div>
+    </div>
+
+    <div style="
+      grid-template-columns: 100px 1fr 2fr;">
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">1fr</div>
+      <div style="background-color: lightblue;">2fr</div>
+      <!-- uwaga na przestawianie kolumn, w grid'dzie szerokości kolumn nie przestaiają się razem z elementem! -->
+    </div>
+
+    <div style="
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 40px;
+      ">
+      <div style="background-color: lightblue; height: 200px;">1fr</div>
+      <div style="background-color: lightpink; height: 200px;">1fr</div>
+      <div style="background-color: lightblue; height: 200px;">1fr</div>
+      <div style="background-color: lightpink; height: 200px;">1fr</div>
+      <div style="background-color: lightblue; height: 200px;">1fr</div>
+      <div style="background-color: lightpink; height: 200px;">1fr</div>
+    </div>
+
+    <!--exercises lesson 11-->
+
+    <div style="grid-template-columns: 200px 75px;">
+      <div style="background-color: yellowgreen;">200px</div>
+      <div style="background-color: yellow;">75px</div>
+    </div>
+
+    <div style="grid-template-columns: 50px 1fr 75px;">
+      <div style="background-color: yellowgreen;">col1</div>
+      <div style="background-color: yellow;">col2</div>
+      <div style="background-color: yellowgreen;">col3</div>
+    </div>
+
+    <div class="col1-8" style="
+    grid-template-columns: 1fr 1fr 1fr 1fr; column-gap: 20px; row-gap: 10px;
+    ">
+      <div>col1</div>
+      <div>col2</div>
+      <div>col3</div>
+      <div>col4</div>
+      <div>col5</div>
+      <div>col6</div>
+      <div>col7</div>
+      <div>col8</div>
+    </div>
+
+  </body>
+</html>

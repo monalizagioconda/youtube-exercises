@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Position Practice</title>
+    <style>
+      .close-button {
+        position: absolute;
+        padding: 10px;
+        border-radius: 50%;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        top: -20px;
+        left: -20px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 0;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      .grey-box-container {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+      }
+      .grey-box {
+        width: 320px;
+        height: 180px;
+        background-color: grey;
+        position: relative;
+        bottom: 0px;
+        right: 0px;
+      }
+      .time {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        font-family: Roboto, Arial;
+        padding: 5px 10px;
+      }
+
+      .container-principal {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .img-container {
+        position: relative;
+        font-family: Arial;
+      }
+      .img-size {
+        width: 500px;
+      }
+      .overly-box{
+        display: flex;
+        width: 500px;
+        height: 150px;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(250, 250, 250, 0.6);
+        align-items: center;
+        justify-content: center;
+      }
+      .add-to-cart-button {
+        padding: 10px 15px;
+        font-size: 16px;
+        border: 2px solid black;
+      }
+      .discount-panel {
+        position: absolute;
+        top: 15px;
+        right: 0;
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        padding: 10px 14px;
+      }
+
+    </style>
+  </head>
+  <body style="
+    height: 3000px;
+    padding-top: 60px;
+    padding-left: 80px;
+    ">
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      height: 50px;
+      ">header</div>
+
+    <div style="
+      background-color: green;
+      color: white;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      top: 50px;
+      width: 72px;
+      ">
+      sidebar
+        <div style="
+        position:absolute;
+        background-color: red;
+        color: white;
+        top: 0;
+        right: 0;
+        ">
+        X
+        </div>
+    </div>
+
+    <div style="
+      background-color: lightblue;
+      height: 200px;
+      width: 200px;
+      position: static;
+      ">div 1</div>
+
+    <div style="
+      background-color: lightpink;
+      height: 200px;
+      width: 200px;
+      position: relative;
+      ">div 2
+        <div style="
+        position:absolute;
+        background-color: black;
+        color: white;
+        bottom: 10px;
+        right: 10px;
+        ">
+        5:00
+        </div>  
+    </div>
+
+    <div style="
+      background-color: rgb(233, 211, 11);
+      color: white;
+      position: fixed;
+      bottom: 0px;
+      right: 0px;
+      height: 50px;
+      ">bottom-right</div>
+
+  <div class="grey-box-container">
+    <div class="grey-box">
+      <div class="close-button">&#10006;</div>
+      <div class="time">0:29</div>
+    </div>
+  </div>
+
+  <div class="container-principal">
+    <div class="img-container">
+      <img class="img-size" src="thumbnails/Wikipedia-T-shirt.jpg">
+      <div class="discount-panel">20% OFF</div>
+      <div class="overly-box">
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  
+  </body>
+</html>
